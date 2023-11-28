@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .box {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    .top-header {
+      text-align: center; /* Alinea el texto al centro */
+      h3 {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: black;
+      }
+
+      small {
+        color: #333;
+        font-weight: bold;
+      }
+    }
+
+    .input-group {
+      margin-top: 20px;
+
+      .input-field {
+        position: relative;
+        margin-bottom: 20px;
+
+        input {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          outline: none;
+        }
+
+        label {
+          position: absolute;
+          top: 50%;
+          left: 10px;
+          transform: translateY(-50%);
+          padding: 0 5px;
+        }
+      }
+    }
+
+    .ion-button {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    .forgot {
+      margin-top: 10px;
+      a {
+        color: #333;
+        display: block; /* Hace que el enlace ocupe todo el ancho disponible */
+        text-align: center; /* Alinea el texto al centro */
+        margin-top: 10px; /* Espaciado superior */
+      }
+    }
+  }
+}

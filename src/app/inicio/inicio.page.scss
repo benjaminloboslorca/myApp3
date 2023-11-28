@@ -1,0 +1,83 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .box {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    .top-header {
+      text-align: center; /* Centra el texto */
+
+      h3 {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: black;
+      }
+
+      small {
+        color: #333;
+        font-weight: bold;
+      }
+    }
+
+    .button-animated,
+    .button-naranja {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    .button-naranja {
+      width: 100%; /* Ajusta el ancho del botón al 100% del contenedor */
+      background-color: orange;
+      border-color: orange;
+      color: white;
+    }
+
+    .cerrar {
+      margin-top: 10px;
+      .button-animated {
+        font-weight: bold;
+      }
+    }
+
+    .pochacco {
+      margin-top: 20px;
+      display: block;
+      text-align: center;
+
+      img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        border-radius: 8px;
+      }
+    }
+
+    .regis {
+      margin-top: 20px;
+      text-align: center; /* Centra el contenido, incluido el botón */
+      .regis-btn {
+        width: 80%; /* Ajusta el ancho del botón al 80% del contenedor */
+        background-color: orange;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .scanner-active {
+    background-color: #f0f0f0;
+  }
+}

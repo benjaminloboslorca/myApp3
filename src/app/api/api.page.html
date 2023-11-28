@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-back-button defaultHref="/inicio"></ion-back-button> <!-- Añade el botón de retroceso -->
+    </ion-buttons>
+    <ion-title>INICIO</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label #titulo class="titulo">
+        Bienvenido
+      </ion-label>
+    </ion-list-header>
+
+    <ion-item class="item" *ngFor="let personaje of personajes" [routerLink]="['/perfil/' + personaje.id ]">
+      <ion-avatar aria-hidden="true" class="imagen" slot="start">
+        <img src="{{ personaje.image }}" alt="">
+      </ion-avatar>
+      <ion-label>{{ personaje.name }}</ion-label>
+    </ion-item>
+
+  </ion-list> 
+
+</ion-content>

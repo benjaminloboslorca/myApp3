@@ -1,0 +1,43 @@
+<ion-app>
+  <ion-content>
+    <div class="container">
+
+      <div class="box">
+
+        <div class="box-login" id="login">
+
+          <div class="top-header">
+            <h3>Bienvenido</h3>
+            <span>Inicia sesión para empezar.</span>
+          </div>
+          
+          <form [formGroup]="formularioLogin">
+            <div class="input-group">
+              <div class="input-field">
+                  <input type="text" class="input-box" id="logEmail" required="" formControlName="correo">
+                  <label for="logEmail">Usuario</label>
+              </div>
+              <div class="input-field">
+                  <input type="password" class="input-box" id="logPassword" required="" formControlName="contrasena">
+                  <label for="logPassword">Contraseña</label>
+              </div>
+            </div> 
+                <ion-button expand="full" type="submit" color="primary" (click)="ingresar()" >Iniciar sesión</ion-button>
+          </form> 
+            <div class="forgot">
+              <a href="/olvidar">¿Olvidaste tu contraseña?</a>
+            </div>
+            <div class="regis">
+              <button class="regis-btn">
+                <a href="/registro">Registrarse</a>
+              </button>
+            </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </ion-content>
+</ion-app>

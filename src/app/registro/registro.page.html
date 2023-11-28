@@ -1,0 +1,30 @@
+<ion-app>
+  <ion-content>
+    <div class="container">
+      <div class="box">
+        <div class="box-login" id="login">
+          <div class="top-header">
+            <h3>Bienvenido a RegistrApp</h3>
+            <small>Crea una nueva cuenta!</small>
+          </div>
+          <form [formGroup]="formularioLogin">
+            <div class="input-group">
+              <div class="input-field">
+                <input type="text" class="input-box" id="logEmail" required="" formControlName="correo">
+                <label for="logEmail">Usuario</label>
+              </div>
+              <div class="input-field">
+                <input type="password" class="input-box" id="logPassword" required="" formControlName="contrasena">
+                <label for="logPassword">Contraseña</label>
+              </div>
+            </div> 
+              <ion-button expand="full" type="submit" color="primary" (click)="registrar()">Crear cuenta</ion-button>
+          </form>  
+            <div class="forgot">
+              <a href="/login">¿Ya tienes una cuenta?</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-app>

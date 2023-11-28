@@ -1,0 +1,99 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.box-login {
+  text-align: center;
+
+  .top-header {
+    margin-bottom: 20px;
+
+    h3 {
+      color: #333;
+      font-weight: bold; // Añadir grosor a las letras
+    }
+
+    small {
+      color: #666;
+    }
+  }
+
+  .input-group {
+    margin-bottom: 20px;
+
+    .input-field {
+      margin-bottom: 15px;
+
+      input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 16px;
+
+        &:focus {
+          outline: none;
+          border-color: #007bff;
+        }
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+      }
+    }
+  }
+
+  .forgot,
+  .regis {
+    margin-bottom: 15px;
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .regis-btn {
+    background-color: #ff8c00; // Cambiar el color del botón a naranja
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+
+.top-header {
+  h3 {
+    font-weight: bold; // Para dar grosor a las letras
+    color: black; // Cambiar el color del texto a negro
+    // También puedes agregar otros estilos según sea necesario
+  }
+
+  span {
+    color: black; // Cambiar el color del texto a negro
+    // También puedes agregar otros estilos según sea necesario
+  }
+}
